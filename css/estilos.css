@@ -1,0 +1,8 @@
+nav li {
+    display: inline;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+}
