@@ -6,7 +6,7 @@ body {
     margin: 0;
 }
 
-/* NAV */
+/* NAV 
 nav li {
     display: inline;
 }
@@ -15,7 +15,7 @@ nav ul {
     display: flex;
     justify-content: space-evenly;
 }
-
+*/
 /* CONTAINER */
 #container {
     display: flex;
