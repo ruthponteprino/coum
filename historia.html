@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./css/estilos.css">
+    <title>Historia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="min-h-screen flex flex-col">
+    <div id="container" class="flex-grow">
+        <header class="relative w-full h-[60vh] md:h-[60vh] lg:h-[50vh]">
+            <nav>
+                <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+                    <div class="relative flex h-16 items-center justify-between">
+                        <div class="absolute inset-y-0 right-0 flex items-center sm:hidden">
+                            <!-- Boton version movil-->
+                            <button type="button" id="boton-mobile"
+                                class="relative z-50 inline-flex items-center justify-center rounded-md p-2 text-white"
+                                aria-controls="mobile-menu" aria-expanded="false">
+                                <span class="absolute -inset-0.5"></span>
+                                <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                    stroke="currentColor" aria-hidden="true" data-slot="icon">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                                </svg>
+                                <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                    stroke="currentColor" aria-hidden="true" data-slot="icon">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+                            <div class="hidden sm:ml-6 sm:block">
+                                <div class="flex space-x-4">
+                                    <a href="#" class="boton-desktop px-3 py-2 text-sm font-medium text-white"
+                                        aria-current="page">historia</a>
+                                    <!-- Submenu -->
+                                    <ul class="submenu-desktop hidden">
+                                        <li>
+                                            <a href="#" class="block px-4 py-2 text-sm text-gray-300">integrantes</a>
+                                        </li>
+                                    </ul>
+
+                                    <a href="#"
+                                        class="boton-desktop rounded-md px-3 py-2 text-sm font-medium text-white">performances</a>
+                                    <!-- Submenu -->
+                                    <ul class="submenu-desktop hidden">
+                                        <li>
+                                            <a href="#" class="block px-4 py-2 text-sm text-gray-300">prostitution</a>
+                                        </li>
+                                    </ul>
+                                    <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-white">galeria</a>
+                                    <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-white">impacto</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Menu movil -->
+                <div id="menu-mobile"
+                    class="hidden absolute inset-0 bg-black h-screen sm:hidden z-40 flex flex-col items-center justify-center"
+                    id="mobile-menu">
+                    <div class="space-y-1 px-2 pb-3 pt-2">
+                        <a href="#" class="menu-con-sub block px-3 py-2 text-4xl font-medium text-white"
+                            aria-current="page">historia</a>
+                        <!-- Submenu -->
+                        <ul class="space-y-1">
+                            <li>
+                                <a href="#"
+                                    class="submenu block ml-[0.5em] submenu rounded-md px-3 py-2 text-3xl font-medium text-gray-300 hidden">
+                                    integrantes</a>
+                            </li>
+                        </ul>
+                        <a href="#"
+                            class="menu-con-sub block rounded-md px-3 py-2 text-4xl font-medium text-white">performances</a>
+                        <!-- Submenu -->
+                        <ul class="space-y-1">
+                            <li>
+                                <a href="#"
+                                    class="submenu block ml-[0.5em] rounded-md px-3 py-2 text-3xl font-medium text-gray-300 hidden">prostitution</a>
+                            </li>
+                        </ul>
+                        <a href="#" class="block rounded-md px-3 py-2 text-4xl font-medium text-white">galeria</a>
+                        <a href="#" class="block rounded-md px-3 py-2 text-4xl font-medium text-white">impacto</a>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="titulo-principal mt-[13em] ml-[0.5em] md:mt-[12em] lg:mt-[9em]">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white-500 text-left">Coum<br>Transmissions
+                </h1>
+            </div>
+        </header>
+
+        <footer>
+            <p class="text-center">Todos los derechos reservados.</p>
+        </footer>
+    </div>
+</body>
+<script src="./js/app.js"></script>
+
+</html>
