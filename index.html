@@ -7,11 +7,17 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./css/estilos.css">
     <title>Coum Transmissions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
 
-<body>
-    <div id="container">
-        <header class="relative w-full h-[40vh] md:h-[60vh] lg:h-[50vh]">
+<body class="min-h-screen flex flex-col"> <!-- min-h Asegura que el body ocupe al menos la altura de la pantalla -->
+    <div id="container" class="flex-grow">
+        <!-- Permite que este contenedor crezca y ocupe el espacio disponible entre el header y el footer. -->
+        <header class="relative w-full h-[60vh] md:h-[60vh] lg:h-[50vh]">
             <div class="background-video absolute inset-0 w-full h-full">
                 <video class="object-cover w-full h-full lg:h-[50vh]" autoplay loop muted>
                     <source src="./img/clip.mp4" type="video/mp4">
@@ -20,7 +26,7 @@
             <nav>
                 <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
                     <div class="relative flex h-16 items-center justify-between">
-                        <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+                        <div class="absolute inset-y-0 right-0 flex items-center sm:hidden">
                             <!-- Boton version movil-->
                             <button type="button" id="boton-mobile"
                                 class="relative z-50 inline-flex items-center justify-center rounded-md p-2 text-white"
@@ -98,20 +104,25 @@
                 </div>
             </nav>
 
-            <div class="titulo-principal mt-[6em] ml-[0.5em] md:mt-[12em] lg:mt-[9em]">
+            <div class="titulo-principal mt-[13em] ml-[0.5em] md:mt-[12em] lg:mt-[9em]">
                 <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white-500 text-left">Coum<br>Transmissions
                 </h1>
             </div>
         </header>
 
-        <section class="section-home">
-            <p class="subtitulo">Artistas revolucionarios,</p>
-            <p class="subtitulo">Pioneros de la música,</p>
-            <p class="subtitulo">Pornógrafos,</p>
-            <p class="subtitulo">Demoledores de la civilización.</p>
+        <section class="section-home flex-grow flex flex-col justify-center">
+            <!-- Asegura que la sección use el espacio disponible de manera que el footer se mantenga en la parte inferior de la pantalla -->
+            <div class="flex flex-col items-start">
+                <p class="subtitulo text-sm md:text-base lg:text-lg">Artistas revolucionarios,</p>
+                <p class="subtitulo text-sm md:text-base lg:text-lg">Pioneros de la música,</p>
+                <p class="subtitulo text-sm md:text-base lg:text-lg">Pornógrafos,</p>
+            </div>
+            <div class="subtitulo-dos flex justify-end w-full">
+                <p class="subtitulo text-sm md:text-base lg:text-lg">Demoledores de la civilización.</p>
+            </div>
         </section>
         <footer>
-            <p>Todos los derechos reservados.</p>
+            <p class="text-center">Todos los derechos reservados.</p>
         </footer>
     </div>
 
