@@ -16,7 +16,8 @@
 
 <body class="min-h-screen flex flex-col">
     <div id="container" class="flex-grow">
-        <header class="relative w-full h-[60vh] md:h-[60vh] lg:h-[50vh]">
+        <header
+            class="relative w-full h-[60vh] md:h-[60vh] lg:h-[50vh] bg-[url('./img/maxresdefault.jpg')] h-64 bg-cover bg-center">
             <nav>
                 <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
                     <div class="relative flex h-16 items-center justify-between">
@@ -45,20 +46,24 @@
                                     <!-- Submenu -->
                                     <ul class="submenu-desktop hidden">
                                         <li>
-                                            <a href="#" class="block px-4 py-2 text-sm text-gray-300">integrantes</a>
+                                            <a href="integrantes.html"
+                                                class="block px-4 py-2 text-sm text-gray-300">integrantes</a>
                                         </li>
                                     </ul>
 
-                                    <a href="#"
+                                    <a href="performances.html"
                                         class="boton-desktop rounded-md px-3 py-2 text-sm font-medium text-white">performances</a>
                                     <!-- Submenu -->
                                     <ul class="submenu-desktop hidden">
                                         <li>
-                                            <a href="#" class="block px-4 py-2 text-sm text-gray-300">prostitution</a>
+                                            <a href="prostitution.html"
+                                                class="block px-4 py-2 text-sm text-gray-300">prostitution</a>
                                         </li>
                                     </ul>
-                                    <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-white">galeria</a>
-                                    <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-white">impacto</a>
+                                    <a href="galeria.html"
+                                        class="rounded-md px-3 py-2 text-sm font-medium text-white">galeria</a>
+                                    <a href="impacto.html"
+                                        class="rounded-md px-3 py-2 text-sm font-medium text-white">impacto</a>
                                 </div>
                             </div>
                         </div>
@@ -73,27 +78,29 @@
                     class="hidden absolute inset-0 bg-black h-screen sm:hidden z-40 flex flex-col items-center justify-center"
                     id="mobile-menu">
                     <div class="space-y-1 px-2 pb-3 pt-2">
-                        <a href="#" class="menu-con-sub block px-3 py-2 text-4xl font-medium text-white"
+                        <a href="historia.html" class="menu-con-sub block px-3 py-2 text-4xl font-medium text-white"
                             aria-current="page">historia</a>
                         <!-- Submenu -->
                         <ul class="space-y-1">
                             <li>
-                                <a href="#"
+                                <a href="integrantes.html"
                                     class="submenu block ml-[0.5em] submenu rounded-md px-3 py-2 text-3xl font-medium text-gray-300 hidden">
                                     integrantes</a>
                             </li>
                         </ul>
-                        <a href="#"
+                        <a href="performances.html"
                             class="menu-con-sub block rounded-md px-3 py-2 text-4xl font-medium text-white">performances</a>
                         <!-- Submenu -->
                         <ul class="space-y-1">
                             <li>
-                                <a href="#"
+                                <a href="prostitution.html"
                                     class="submenu block ml-[0.5em] rounded-md px-3 py-2 text-3xl font-medium text-gray-300 hidden">prostitution</a>
                             </li>
                         </ul>
-                        <a href="#" class="block rounded-md px-3 py-2 text-4xl font-medium text-white">galeria</a>
-                        <a href="#" class="block rounded-md px-3 py-2 text-4xl font-medium text-white">impacto</a>
+                        <a href="galeria.html"
+                            class="block rounded-md px-3 py-2 text-4xl font-medium text-white">galeria</a>
+                        <a href="impacto.html"
+                            class="block rounded-md px-3 py-2 text-4xl font-medium text-white">impacto</a>
                     </div>
                 </div>
             </nav>
@@ -103,7 +110,36 @@
                 </h1>
             </div>
         </header>
+        <div>
+            <ul class="breadcrumbs my-2">
+                <a href="index.html">inicio</a>
+                <span>></span>
+                <a class="actual">historia</a>
+                <span>
+            </ul>
+        </div>
 
+        <section class="text-white text-xs m-3 lg:text-2xl">
+            <p>COUM Transmissions fue un colectivo de arte y performance fundado en el
+                Reino
+                Unido en
+                1976, conocido por
+                su enfoque
+                radical y provocador que exploró temas de sexualidad, género e identidad. A continuación, se presenta un
+                resumen de su
+                historia:</p><br>
+            <p>El colectivo fue fundado por Genesis P-Orridge y Cosey Fanni Tutti, junto con otros artistas, en un
+                período de
+                efervescencia cultural en el Reino Unido que incluía el surgimiento del punk rock y movimientos
+                contraculturales. COUM
+                se estableció en un contexto donde se buscaba romper con las convenciones artísticas tradicionales.</p>
+            <br>
+            <p>COUM Transmissions dejó una marca indeleble en el panorama artístico, desafiando las normas y promoviendo
+                un diálogo
+                sobre la sexualidad, la identidad y el papel del arte en la sociedad. Su valentía y originalidad han
+                inspirado a
+                generaciones de artistas posteriores.</p>
+        </section>
         <footer>
             <p class="text-center">Todos los derechos reservados.</p>
         </footer>

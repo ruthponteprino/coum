@@ -2,7 +2,7 @@ body {
     background-color: #000;
     display: flex;
     flex-direction: column;
-    /* min-height: 100vh;*/
+    font-family: "Montserrat", sans-serif;
     margin: 0;
 }
 
@@ -75,6 +75,35 @@ header {
     text-align: right;
     /* width: 25em;*/
 }
+
+
+/* MIGAS */
+
+.breadcrumbs {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: #fff;
+}
+
+.breadcrumbs a {
+    text-decoration: none;
+    /* Color del enlace */
+    margin: 0 5px;
+}
+
+.breadcrumbs a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumbs span {
+    margin: 0 5px;
+}
+
+.actual {
+    font-weight: bold;
+}
+
 
 /* FOOTER */
 footer p {
