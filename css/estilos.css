@@ -1,3 +1,4 @@
+/* NAV */
 nav li {
     display: inline;
 }
@@ -5,4 +6,35 @@ nav li {
 nav ul {
     display: flex;
     justify-content: space-evenly;
+}
+
+
+/* HEADER */
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.background-video video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    height: 20em;
+    color: white;
+}
+
+.titulo-principal {
+    position: relative;
+    z-index: 1;
+    text-align: center;
 }
